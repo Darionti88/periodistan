@@ -1,0 +1,81 @@
+[{
+    "id": "34",
+    "title": "I Guerra Mundial",
+    "background": "https://cdn.pixabay.com/photo/2012/11/28/08/58/soldiers-grave-67510_960_720.jpg",
+    "direction": "vertical"
+}, {
+    "id": "35",
+    "title": "El Cáucaso",
+    "background": "https://cdn.pixabay.com/photo/2016/11/01/13/54/europe-1788319_960_720.jpg",
+    "direction": "horizontal"
+}, {
+    "id": "36",
+    "title": "Deporte, Política y Guerra",
+    "background": "https://img.timeinc.net/time/daily/2008/0808/mercenary_0819.jpg",
+    "direction": "square"
+}, {
+    "id": "37",
+    "title": "Lelo Burti",
+    "background": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftombourdon.co.uk%2Fwp-content%2Fuploads%2F2019%2F05%2FGEO_280419_1343-1-1500x1000.jpg&f=1&nofb=1",
+    "direction": "vertical"
+}, {
+    "id": "38",
+    "title": "El Vino de la Última Cena",
+    "background": "https://cdn.pixabay.com/photo/2014/05/03/12/59/painting-337049_960_720.jpg",
+    "direction": "horizontal"
+}, {
+    "id": "39",
+    "title": "Esvanetia",
+    "background": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh5.googleusercontent.com%2Fproxy%2Fu1-yI4M-aCaCIjP4pgRk0bAMmSTkY_uwkoYRzQhhCIswlXvT-k6oc0AMjn6GYyFMtiIaN5fsXTOraWFc8H28OBOUkwRRo5DU8cK0amMF1XlfieEqe_WNJF_8VNbGmfAcEMajBRBa%3Ds0-d&f=1&nofb=1",
+    "direction": "square"
+}, {
+    "id": "40",
+    "title": "Dargavs, Osetia",
+    "background": "https://cdn.pixabay.com/photo/2016/05/07/18/30/dargavs-1377986_960_720.jpg",
+    "direction": "vertical"
+}, {
+    "id": "41",
+    "title": "Anton Krotov",
+    "background": "https://cdn-brilio-net.akamaized.net/community/2018/01/16/6426/anton-krotov-bacpacker-yang-keliling-dunia-tanpa-uang-sepeser-pun-011531.jpg",
+    "direction": "horizontal"
+}, {
+    "id": "9",
+    "title": "Barbas, Shamil y la Lucha, Chechenia",
+    "background": "https://pbs.twimg.com/media/EJSCjBNWoAAxxSl?format=jpg&name=900x900",
+    "direction": "horizontal"
+}, {
+    "id": "10",
+    "title": "Ichkeria y la Guerra",
+    "background": "https://pbs.twimg.com/media/EKKq5CIX0AAcwsm?format=jpg&name=900x900",
+    "direction": "square"
+}, {
+    "id": "11",
+    "title": "El Deporte en Chechenia",
+    "background": "https://pbs.twimg.com/media/EKeJp9JXkAEXd8F?format=jpg&name=4096x4096",
+    "direction": "vertical"
+}, {
+    "id": "12",
+    "title": "República de las Montañas",
+    "background": "https://pbs.twimg.com/media/EGH0qzHWoAEUsBT?format=png&name=small",
+    "direction": "square"
+}, {
+    "id": "13",
+    "title": "Tabasarán",
+    "background": "https://pbs.twimg.com/media/EItya6mXsAAY8LQ?format=jpg&name=medium",
+    "direction": "horizontal"
+}, {
+    "id": "14",
+    "title": "Daguestán",
+    "background": "https://pbs.twimg.com/media/D_coiWZWwAAqZcT?format=jpg&name=medium",
+    "direction": "square"
+}, {
+    "id": "15",
+    "title": "Kalmukia",
+    "background": "https://pbs.twimg.com/media/EIADzENWoAIxOLR?format=jpg&name=small",
+    "direction": "vertical"
+}, {
+    "id": "15",
+    "title": "Los Gitanos",
+    "background": "https://pbs.twimg.com/media/D7R6EykWsAUDPfU?format=png&name=small",
+    "direction": "horizontal"
+}]

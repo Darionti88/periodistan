@@ -1,0 +1,25 @@
+
+.blogpost-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.carousel{
+  height:100%;
+}
+
+.carousel-inner {
+  height: inherit;
+}
+
+.carousel-item{
+  height: 100%;
+  width: 33,3%;
+}
+
+.carousel-image{
+  max-height: 100%;
+  max-width: 100%;
+}
