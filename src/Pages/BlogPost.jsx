@@ -1,58 +1,82 @@
+
 import  React  from "react";
 import {useState, useEffect} from 'react'
 import Post from '../Components/Post'
-import hilosEuropa from '../hilosJSON/hilosDeEuropa.json'
-import hilosAsia from '../hilosJSON/hilosDeAsia.json'
+import europaThread from '../JsonThreads/europaThread.json'
+import asiaThread from '../JsonThreads/asiaThread.json'
 import {useHistory} from 'react-router-dom'
-import Pagination from '../Components/Pagination'
+import Pagination from 'react-bootstrap/Pagination'
 import './stylePost.css'
 
 
-export default function BlogPost(props){
-  const [post, setPost] = useState('')
-  const [load, setLoad] = useState(false)
-  const [hilos, setHilo] = useState([{
-    id: "",
-    title: "",
-    background: "",
-    direction: "",
-    card1: [
-          {
-            text: "",
-            images: [""] 
-          }
-    ]
-  }])
+export default function BlogPost(){
+
+  // ## Here i store, as a separate array, the part of the Json file where i have the info i need
+  const [slicedThread, setSlicedThread] = useState([
+    {
+      text: "",
+      images: [""] 
+    }
+])
+  const [currentPage, setCurrentPage] = useState(1)
+
+
+  const [totalPosts, setTotalPosts] = useState("")
   
-    
+   // ## This part of the URL will help the program choose wich JSON file it will store 
   const history = useHistory()
   const currentUrl = history.location.pathname
 
+useEffect(() => {
+  // ## My linkTo always have 5 letter so it is always the same part 
+  const continent = currentUrl.slice(1, 6)
+  if (continent === "europ") {
+  // ## How many Posts does the thread have
+    setTotalPosts(europaThread[currentUrl.slice(-1)].cards.length)
+    // ## Here I get the array where I have the actual Info
+    setSlicedThread(europaThread[currentUrl.slice(-1)].cards.slice(0, europaThread[currentUrl.slice(-1)].cards.length))
+  } else {
+    setTotalPosts(asiaThread[currentUrl.slice(-1)].cards.length)
+    setSlicedThread(asiaThread[currentUrl.slice(-1)].cards.slice(0, asiaThread[currentUrl.slice(-1)].cards.length))
+  }
+}, [currentUrl])
 
 
-useEffect(()=>{
-const continent = currentUrl.slice(1, 6)
-  if (continent === "europ"){
-  setHilo(hilosEuropa)
-} else {
-  setHilo(hilosAsia)
+// ## Number of pages the Pagination will display. As i only want 1 post per page it is simple math.
+const pageNumbers = []
+for (let i = 1; i <= totalPosts / 1; i++){
+    pageNumbers.push(i)
 }
-setPost(currentUrl.slice(-1))
-setLoad(true)
-}, [currentUrl] )
 
+// ## Sets the current page using the Pagination.Item ID, wich is the same number as the page.
+function handleClick(e){
+      setCurrentPage(Number(e.target.id))
+}
 
   return (
       <div className='blogpost-container'>
-            {load ? <Post  
-            cardText={hilos[post].card1[0].text}
-            cardImage1='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fasiasociety.org%2Ffiles%2F130709_smmerdssrt_07.jpg&f=1&nofb=1'
-            cardImage2='https://1.bp.blogspot.com/-yuLb4278_Xo/Vkh0KLdhzgI/AAAAAAABHcE/QjdTB60cTTU/s1600/TANG%2BYUAN%2BASIAN%2BDESSERTS-16.JPG'
-            cardImage3='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fasiasociety.org%2Ffiles%2F130709_smmerdssrt_07.jpg&f=1&nofb=1'
-            cardImage4='https://1.bp.blogspot.com/-yuLb4278_Xo/Vkh0KLdhzgI/AAAAAAABHcE/QjdTB60cTTU/s1600/TANG%2BYUAN%2BASIAN%2BDESSERTS-16.JPG'
-            cardImage5='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fasiasociety.org%2Ffiles%2F130709_smmerdssrt_07.jpg&f=1&nofb=1' 
-            /> : null }
-          <Pagination />
+      {/* // ## Using the CurrentPage I choose wich of the posts i want to show */}
+            {  slicedThread.slice(currentPage - 1, currentPage).map((item, index)=>{
+                    return (<Post  
+                  key={index}
+                  cardText={item.text}
+                  cardImage1={item.images[0]}
+                  cardImage2={item.images[1]}
+                  cardImage3={item.images[2]}
+                  cardImage4={item.images[3]}
+                  cardImage5={item.images[4]} 
+                  /> )})  } 
+          <Pagination>
+          { pageNumbers.map(number => 
+            ( <Pagination.Item 
+                key={number} 
+                id={number}
+                onClick={handleClick}
+                >{number}</Pagination.Item> )) 
+                
+         }
+          </Pagination>
+
       </div>
   )
 }
