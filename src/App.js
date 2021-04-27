@@ -2,14 +2,14 @@
 import React from 'react'
 import {Switch, Route, BrowserRouter as Router} from 'react-router-dom'
 import Header from './Components/Header'
-import LandingPage from '../src/Pages/LandingPage'
+import LandingPage from '../src/Pages/LandingPage/Index'
 import Footer from './Components/Footer'
-import AsiaPage from '../src/Pages/AsiaPage.jsx'
-import AfricaPage from './Pages/AfricaPage.jsx'
-import AmericaPage from '../src/Pages/AmericaPage.jsx'
-import EuropaPage from '../src/Pages/EuropaPage.jsx'
-import MundoPage from '../src/Pages/MundoPage.jsx'
-import BlogPost from '../src/Pages/BlogPost.jsx'
+import AsiaPage from '../src/Pages/AsiaPage/Index'
+import AfricaPage from '../src/Pages/AfricaPage/Index'
+import AmericaPage from '../src/Pages/AmericaPage/Index'
+import EuropaPage from '../src/Pages/EuropaPage/Index'
+import MundoPage from '../src/Pages/WorldPage/Index'
+import BlogPost from '../src/Pages/BlogPostPage/Index'
 import Layout from '../src/Pages/Layout'
 
 
@@ -26,7 +26,7 @@ function App() {
         <Route path='/america'><AmericaPage /></Route>
         <Route path='/europa'><EuropaPage /></Route>
         <Route path='/world'><MundoPage /></Route>
-        <Route path={'/europ/:postId'| 'asian/:postId'}><BlogPost /></Route>
+        <Route path={'/europ/:postId'| '/asian/:postId' | '/afrika/:postId'| '/amerika/:postId'}><BlogPost /></Route>
         
       </Switch>
       </Layout>

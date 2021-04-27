@@ -1,10 +1,10 @@
 import React  from 'react'
-import Card from '../Components/Card'
-import threads from '../JsonThreads/americaThread.json'
-import './stylesEuropa.css'
+import Card from '../../Components/Card'
+import threads from '../../JsonThreads/worldThread.json'
+import '../stylesContinents.css'
 
 
-export default function AmericaPage(){
+export default function MundoPage(){
 // ## I map the JSON file so i can get the cards with the title and image display. Depending on the direction the size of the card
     return (
         <div className='grid-container'>

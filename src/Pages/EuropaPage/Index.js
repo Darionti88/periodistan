@@ -1,7 +1,7 @@
 import React  from 'react'
-import Card from '../Components/Card'
-import threads from '../JsonThreads/europaThread.json'
-import './stylesEuropa.css'
+import Card from '../../Components/Card'
+import threads from '../../JsonThreads/europaThread.json'
+import '../stylesContinents.css'
 
 
 export default function EuropaPage(){

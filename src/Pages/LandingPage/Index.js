@@ -1,5 +1,5 @@
 import React from 'react'
-import ferDuclos from '../images/ferDuclos.png'
+import ferDuclos from '../../images/ferDuclos.png'
 import {Button, Image} from 'react-bootstrap'
 import './styleLanding.css'
 

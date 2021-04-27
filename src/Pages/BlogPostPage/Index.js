@@ -1,9 +1,9 @@
 
 import  React  from "react";
 import {useState, useEffect} from 'react'
-import Post from '../Components/Post'
-import europaThread from '../JsonThreads/europaThread.json'
-import asiaThread from '../JsonThreads/asiaThread.json'
+import Post from '../../Components/Post'
+import europaThread from '../../JsonThreads/europaThread.json'
+import asiaThread from '../../JsonThreads/asiaThread.json'
 import {useHistory} from 'react-router-dom'
 import Pagination from 'react-bootstrap/Pagination'
 import './stylePost.css'
@@ -26,18 +26,41 @@ export default function BlogPost(){
    // ## This part of the URL will help the program choose wich JSON file it will store 
   const history = useHistory()
   const currentUrl = history.location.pathname
+  console.log(currentUrl.length)
 
 useEffect(() => {
   // ## My linkTo always have 5 letter so it is always the same part 
   const continent = currentUrl.slice(1, 6)
   if (continent === "europ") {
   // ## How many Posts does the thread have
-    setTotalPosts(europaThread[currentUrl.slice(-1)].cards.length)
+    setTotalPosts(()=>{
+      if(currentUrl.length === 8) {
+        return (europaThread[currentUrl.slice(-1)].cards.length)}
+        else{
+          return (europaThread[currentUrl.slice(-2)].cards.length)
+        }})
     // ## Here I get the array where I have the actual Info
-    setSlicedThread(europaThread[currentUrl.slice(-1)].cards.slice(0, europaThread[currentUrl.slice(-1)].cards.length))
-  } else {
-    setTotalPosts(asiaThread[currentUrl.slice(-1)].cards.length)
-    setSlicedThread(asiaThread[currentUrl.slice(-1)].cards.slice(0, asiaThread[currentUrl.slice(-1)].cards.length))
+    setSlicedThread(()=>{
+      if(currentUrl.length === 8){
+        return (europaThread[currentUrl.slice(-1)].cards.slice(0, europaThread[currentUrl.slice(-1)].cards.length))}
+        else {
+          return (europaThread[currentUrl.slice(-2)].cards.slice(0, europaThread[currentUrl.slice(-2)].cards.length))
+        }
+      })
+  } else if(continent === "asiaa" ) {
+    setTotalPosts(()=>{
+      if(currentUrl.length === 8) {
+        return (asiaThread[currentUrl.slice(-1)].cards.length)}
+        else{
+          return (asiaThread[currentUrl.slice(-2)].cards.length)
+        }})
+    setSlicedThread(()=>{
+      if(currentUrl.length === 8){
+        return (asiaThread[currentUrl.slice(-1)].cards.slice(0, asiaThread[currentUrl.slice(-1)].cards.length))}
+        else {
+          return (asiaThread[currentUrl.slice(-2)].cards.slice(0, asiaThread[currentUrl.slice(-2)].cards.length))
+        }
+      })
   }
 }, [currentUrl])
 
@@ -74,7 +97,7 @@ function handleClick(e){
                 onClick={handleClick}
                 >{number}</Pagination.Item> )) 
                 
-         }
+          }
           </Pagination>
 
       </div>
