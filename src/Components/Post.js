@@ -6,14 +6,14 @@ import {Carousel, Card} from 'react-bootstrap'
 export default function Post(props) {
     return(
         <Card className="card mb-5 mt-3" style={{ width: '90%'}}>
-          <div className="row g-7">
-            <div className="col-md-7">
+          <div className="row">
+            <div className="col-md-7 p-0">
               <Card.Body>
                 <Card.Text>{props.cardText}</Card.Text>
               </Card.Body>
             </div>
-            <div className="col-md-5">
-              <Carousel fade  >
+            <div className="col-md-5 carousel">
+              <Carousel fade >
                 <Carousel.Item className='carousel-item'>
                   <img
                     className="d-block carousel-image"

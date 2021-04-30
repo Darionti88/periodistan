@@ -18,7 +18,7 @@ return (
           <NavDropdown.Item href="/world">Todos</NavDropdown.Item>
         </NavDropdown>
         <Nav.Link href="/asia">Asia</Nav.Link>
-        <Nav.Link href="africa">Africa</Nav.Link>
+        <Nav.Link href="/africa">Africa</Nav.Link>
         <Nav.Link href="/europa">Europa</Nav.Link>
         <Nav.Link href="/america">America</Nav.Link>
       </Nav>

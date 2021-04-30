@@ -13,11 +13,11 @@ export default function AfricaPage(){
         <div className='grid-container'>
                 {  threads.map((item, index)=> {  
                     if (item.direction === 'horizontal'){
-                        return <Card cardClass='card card--horizontal' linkTo={`/afrika/${item.id}`} postId={item.id} key={index}  title={item.title} fondo={item.background} /> }
+                        return <Card cardClass='card card--horizontal' linkTo={`/europa/${item.id}`} postId={item.id} key={index}  title={item.title} fondo={item.background} /> }
                     else if (item.direction === 'vertical'){
-                        return <Card cardClass='card card--vertical' linkTo={`/afrika/${item.id}`} postId={item.id} key={index} title={item.title} fondo={item.background}/> }
+                        return <Card cardClass='card card--vertical' linkTo={`/europa/${item.id}`} postId={item.id} key={index} title={item.title} fondo={item.background}/> }
                     else {
-                        return <Card cardClass='card' linkTo={`/afrika/${item.id}`}  postId={item.id} title={item.title} key={index} fondo={item.background} /> }
+                        return <Card cardClass='card' linkTo={`/europa/${item.id}`}  postId={item.id} title={item.title} key={index} fondo={item.background} /> }
                 })  } 
         </div>
     

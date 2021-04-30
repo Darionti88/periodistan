@@ -4,12 +4,12 @@ import {useState, useEffect} from 'react'
 import Post from '../../Components/Post'
 import europaThread from '../../JsonThreads/europaThread.json'
 import asiaThread from '../../JsonThreads/asiaThread.json'
-import {useHistory} from 'react-router-dom'
+import {useHistory, withRouter} from 'react-router-dom'
 import Pagination from 'react-bootstrap/Pagination'
 import './stylePost.css'
 
 
-export default function BlogPost(){
+function BlogPost(){
 
   // ## Here i store, as a separate array, the part of the Json file where i have the info i need
   const [slicedThread, setSlicedThread] = useState([
@@ -31,34 +31,39 @@ export default function BlogPost(){
 useEffect(() => {
   // ## My linkTo always have 5 letter so it is always the same part 
   const continent = currentUrl.slice(1, 6)
+  const threadWithOneDigitId = currentUrl.slice(-1)
+  const threadWithTwoDigitId = currentUrl.slice(-2)
   if (continent === "europ") {
   // ## How many Posts does the thread have
+  // ## EUROPA THREAD -------
     setTotalPosts(()=>{
       if(currentUrl.length === 8) {
-        return (europaThread[currentUrl.slice(-1)].cards.length)}
+        return (europaThread[threadWithOneDigitId].cards.length)}
         else{
-          return (europaThread[currentUrl.slice(-2)].cards.length)
+          return (europaThread[threadWithTwoDigitId].cards.length)
         }})
     // ## Here I get the array where I have the actual Info
     setSlicedThread(()=>{
       if(currentUrl.length === 8){
-        return (europaThread[currentUrl.slice(-1)].cards.slice(0, europaThread[currentUrl.slice(-1)].cards.length))}
+        return (europaThread[threadWithOneDigitId].cards.slice(0, europaThread[threadWithOneDigitId].cards.length))}
         else {
-          return (europaThread[currentUrl.slice(-2)].cards.slice(0, europaThread[currentUrl.slice(-2)].cards.length))
+          return (europaThread[threadWithTwoDigitId].cards.slice(0, europaThread[threadWithTwoDigitId].cards.length))
         }
       })
-  } else if(continent === "asiaa" ) {
+
+    // ## ASIA THREAD -------
+  } else if(continent.slice(0,3) === "asi" ) {
     setTotalPosts(()=>{
-      if(currentUrl.length === 8) {
-        return (asiaThread[currentUrl.slice(-1)].cards.length)}
+      if(currentUrl.length === 6) {
+        return (asiaThread[threadWithOneDigitId].cards.length)}
         else{
-          return (asiaThread[currentUrl.slice(-2)].cards.length)
+          return (asiaThread[threadWithTwoDigitId].cards.length)
         }})
     setSlicedThread(()=>{
-      if(currentUrl.length === 8){
-        return (asiaThread[currentUrl.slice(-1)].cards.slice(0, asiaThread[currentUrl.slice(-1)].cards.length))}
+      if(currentUrl.length === 6){
+        return (asiaThread[threadWithOneDigitId].cards.slice(0, asiaThread[threadWithOneDigitId].cards.length))}
         else {
-          return (asiaThread[currentUrl.slice(-2)].cards.slice(0, asiaThread[currentUrl.slice(-2)].cards.length))
+          return (asiaThread[threadWithTwoDigitId].cards.slice(0, asiaThread[threadWithTwoDigitId].cards.length))
         }
       })
   }
@@ -103,3 +108,5 @@ function handleClick(e){
       </div>
   )
 }
+
+export default withRouter(BlogPost)
