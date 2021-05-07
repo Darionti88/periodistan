@@ -1,0 +1,61 @@
+[{
+    "id": 0,
+    "title": "Guerra Mundial Africana Pt 1",
+    "background": "https://pbs.twimg.com/media/EVvHtGcWsAYbeq7.jpg",
+    "direction": "horizontal"
+}, {
+    "id": 1,
+    "title": "Guerra Mundial Africana Pt 2",
+    "background": "https://pbs.twimg.com/media/EV1a2cQXQAIzO9-.jpg",
+    "direction": "vertical"
+}, {
+    "id": 2,
+    "title": "Guerra Mundial Africana Pt 3",
+    "background": "https://pbs.twimg.com/media/EWGAsZbU4AApPtF.jpg",
+    "direction": "horizontal"
+}, {
+    "id": 3,
+    "title": "Guerra Mundial Africana Pt 4",
+    "background": "https://pbs.twimg.com/media/EWKyn4fWkAEUICr.jpg",
+    "direction": "horizontal"
+},{
+    "id": 4,
+    "title": "Chagos",
+    "background": "https://pbs.twimg.com/media/Ex_6PHpXEAE2xt1.jpg",
+    "direction": "horizontal"
+}, {
+    "id": 5,
+    "title": "La Guerra Chimpancé",
+    "background": "https://pbs.twimg.com/media/EWoPnzcXgAE-_sr.jpg",
+    "direction": "horizontal"
+}, {
+    "id": 6,
+    "title": "Cerveza de Banana",
+    "background": "https://pbs.twimg.com/media/EaMalzbWoAA4-PN.jpg",
+    "direction": "square"
+}, {
+    "id": 7,
+    "title": "Chicago Bulls",
+    "background": "https://pbs.twimg.com/media/EeHHOCvWAAMlVVV.png",
+    "direction": "square"
+}, {
+    "id": 8,
+    "title": "Golpe de Estado más brutal y Sangriento",
+    "background": "https://pbs.twimg.com/media/Ehe3H3pWsAEPykL.jpg",
+    "direction": "vertical"
+}, {
+    "id": 9,
+    "title": "Togolandia del Oeste",
+    "background": "https://pbs.twimg.com/media/Ei3jf-TWoAEJ8CU.png",
+    "direction": "square"
+}, {
+    "id": 10,
+    "title": "Humera, Etiopía",
+    "background": "https://pbs.twimg.com/media/EmpWe5aWMAAUZSa.jpg",
+    "direction": "square"
+}, {
+    "id": 11,
+    "title": "Nueva Jerusalém",
+    "background": "https://pbs.twimg.com/media/EXsXXqEXQAMt0dG.jpg",
+    "direction": "horizontal"
+}]
