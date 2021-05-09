@@ -7,11 +7,11 @@ const PORT = 3001
 
 const db = mysql.createPool(
     {
-        host:"127.0.0.1",
-        user:"root",
-        password:"mamita_mysql12",
+        host:"us-cdbr-east-03.cleardb.com",
+        user:"b6427cadc2b780",
+        password:"28ab92b9",
         port: 3306,
-        database:"periodistan"
+        database:"heroku_ea1cc0df1d1775e"
     }
 )
 
@@ -37,6 +37,6 @@ app.get("/api/america/:id", (req, res)=>{
         })
     })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log('Server running on port ' + PORT)
 })
