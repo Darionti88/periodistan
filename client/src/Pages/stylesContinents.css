@@ -23,6 +23,7 @@ body {
   grid-auto-flow: dense;
   justify-content: center;
   max-width: 75em;
+  min-height: 100vh;
 }
 
 .card {
@@ -32,10 +33,16 @@ body {
   box-sizing: border-box;  
 }
 
+.loading{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .card-title{
   text-shadow:1px 1px 3px black;
-  font-size:2.5rem;
+  font-size:2.5rem !important;
   color:white;
 }
 .card__image {
@@ -51,9 +58,7 @@ body {
   padding-right: 10px;
   overflow: hidden;
 }
-/* .card__image:hover{
-  background: linear-gradient(to bottom, rgba(46, 231, 248, 0.7),rgba(206, 38, 38, 0)) !important;
-} */
+
 .card__side-by-side {
   height: 100%;
   width: 100%;

@@ -22,7 +22,7 @@
     "id": 4,
     "title": "Chagos",
     "background": "https://pbs.twimg.com/media/Ex_6PHpXEAE2xt1.jpg",
-    "direction": "horizontal"
+    "direction": "square"
 }, {
     "id": 5,
     "title": "La Guerra Chimpancé",
@@ -30,32 +30,32 @@
     "direction": "horizontal"
 }, {
     "id": 6,
-    "title": "Cerveza de Banana",
-    "background": "https://pbs.twimg.com/media/EaMalzbWoAA4-PN.jpg",
+    "title": "Khadidja Zidane",
+    "background": "https://pbs.twimg.com/media/EXCj83PWoAAYx6N.jpg",
     "direction": "square"
 }, {
     "id": 7,
-    "title": "Chicago Bulls",
-    "background": "https://pbs.twimg.com/media/EeHHOCvWAAMlVVV.png",
+    "title": "Rose Lokissim",
+    "background": "https://pbs.twimg.com/media/EW9_bcfWsAMrAKa.png",
     "direction": "square"
 }, {
     "id": 8,
-    "title": "Golpe de Estado más brutal y Sangriento",
-    "background": "https://pbs.twimg.com/media/Ehe3H3pWsAEPykL.jpg",
-    "direction": "vertical"
+    "title": "Maryland",
+    "background": "https://pbs.twimg.com/media/EXREaxdWsAMEM47.png",
+    "direction": "square"
 }, {
     "id": 9,
-    "title": "Togolandia del Oeste",
-    "background": "https://pbs.twimg.com/media/Ei3jf-TWoAEJ8CU.png",
-    "direction": "square"
+    "title": "Guerra de los Toyota",
+    "background": "https://pbs.twimg.com/media/EXLjdIWUEAAFb7j.jpg",
+    "direction": "horizontal"
 }, {
     "id": 10,
-    "title": "Humera, Etiopía",
-    "background": "https://pbs.twimg.com/media/EmpWe5aWMAAUZSa.jpg",
-    "direction": "square"
+    "title": "Guerra Mundial Africana Pt 5",
+    "background": "https://pbs.twimg.com/media/EWUUUCxU0AEi1u0.png",
+    "direction": "vertical"
 }, {
     "id": 11,
-    "title": "Nueva Jerusalém",
-    "background": "https://pbs.twimg.com/media/EXsXXqEXQAMt0dG.jpg",
+    "title": "Guerra Mundial Africana Pt 6",
+    "background": "https://pbs.twimg.com/media/EWd6JHjWAAIAq1Z.jpg",
     "direction": "horizontal"
 }]

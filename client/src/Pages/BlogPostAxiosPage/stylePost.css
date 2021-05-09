@@ -28,6 +28,7 @@ body{
 .card-body{
   overflow: auto;
   height: 70vh;
+  background: linear-gradient(to bottom, #faf3e0, #faf3e0, #eabf9f);
 }
 
 .carousel-inner {
@@ -37,7 +38,7 @@ body{
 
 .carousel{
   /* padding: 0; */
-  background-color: rgb(224, 233, 233);
+  background: linear-gradient(to bottom, #faf3e0, #faf3e0, #eabf9f);
 }
 .carousel-item{
   height: 100%;

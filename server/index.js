@@ -19,8 +19,6 @@ app.use(cors())
 app.use(express.json())
 
 
-
-
 app.get("/api/africa/:id", (req, res)=>{
 const postId = parseInt(req.params.id)
     const sqlSelect = `SELECT * FROM africa WHERE id = ?`
@@ -29,6 +27,15 @@ const postId = parseInt(req.params.id)
         res.send(result)
     })
 })
+
+app.get("/api/america/:id", (req, res)=>{
+    const postId = parseInt(req.params.id)
+        const sqlSelect = `SELECT * FROM america WHERE id = ?`
+        db.query(sqlSelect, [postId]  ,(err, result, fields)=>{
+            if (err) console.log(err)
+            res.send(result)
+        })
+    })
 
 app.listen(PORT, ()=>{
     console.log('Server running on port ' + PORT)

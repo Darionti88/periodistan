@@ -16,9 +16,10 @@ function App() {
   return (
     <Router>
           <Header />
-          <Layout>
+          
       <Switch>
         <Route exact path='/'><LandingPage /></Route>
+        <Layout>
         <Route path='/europa'><ContinentPostsPage /></Route>
         <Route path='/asia' ><ContinentPostsPage /></Route>
         <Route path='/africa'><AfricaPage /></Route>
@@ -28,8 +29,8 @@ function App() {
         <Route path={['/amerika/:postId']}><AxiosBlogPost /></Route>
         <Route path={['/europ/:postId']}><BlogPostLocal /></Route>
         <Route path={['/asi/:postId']}><BlogPostLocal /></Route>
+        </Layout>
       </Switch>
-      </Layout>
       <Footer />
     </Router>
   );
