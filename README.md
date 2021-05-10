@@ -1,5 +1,7 @@
 # periodistan
-Display Twitter threads from user @periodistan_ in a more readable way.
+Display Twitter threads from user @periodistan_ in a more readable way. (REACT.JS, NODE, EXPRESS, MYSQL)
+
+Site: https://periodistan-threads.netlify.app/ (Still have to deploy database and connect so Africa and America can fetch data)
 
 Project Periodistán ENG - "It's my first Solo project where i will try to display Twitter Threads from the user @periodistan_ in a more readable way, sort of like a Blog. My approach for this project will be trying to work with my "inner knowledge" to see how i can resolve things (and try to really think the logic of it), and once i make it work i will start improving it watching tutorials so i can optimize my code"
 
