@@ -1,5 +1,6 @@
 # periodistan
 Display Twitter threads from user @periodistan_ in a more readable way. (REACT.JS, NODE, EXPRESS, MYSQL)
+"Just the front-end here for deployment purposes"
 
 Site: https://periodistan-threads.netlify.app/ (Still have to deploy database and connect so Africa and America can fetch data)
 
