@@ -8,7 +8,7 @@ export default function Header() {
 
 return (
 <React.Fragment>
-  <Navbar collapseOnSelect expand="md" className="bckg" style={{height:'50px', fontFamily: 'Poppins, sans-serif'}}>
+  <Navbar collapseOnSelect expand="md" className="bckg" style={{minHeight:'50px', fontFamily: 'Poppins, sans-serif'}}>
     <Navbar.Brand href="/"><Image  src={Logo} height='40px'/></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">

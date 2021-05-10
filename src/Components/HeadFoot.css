@@ -8,11 +8,19 @@ a{
     font-weight: 500;
 }
 
+.navbar-collapse{
+    background-color: #faf3e0;
+    width: 30%;
+    padding-left: 10px;
+    z-index: 100;
+}
+
 .bckgFoot{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #faf3e0;
+    padding-left: 40px;
     height: 10vh;
     width: 100%;
     font-family: Poppins, sans-serif;
@@ -22,3 +30,4 @@ a{
 p{
     margin-right: 3rem;
 }
+
