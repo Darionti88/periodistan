@@ -9,7 +9,6 @@ a{
 }
 
 .navbar-collapse{
-    background-color: #faf3e0;
     width: 30%;
     padding-left: 10px;
     z-index: 100;
@@ -31,3 +30,8 @@ p{
     margin-right: 3rem;
 }
 
+@media screen and (max-width: 768px){
+    .navbar-collapse{
+        background-color: #faf3e0;
+    }
+}
