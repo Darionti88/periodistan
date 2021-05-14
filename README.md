@@ -8,7 +8,7 @@ ESP - "Es mi primer proyecto solo (que no sea un desafío de cursos), en el que 
 
 ENG - "It's my first Solo project (this means, not as a course challenge) where i will try to display Twitter Threads from the user @periodistan_ in a more readable way, sort of like a Blog. My approach for this project will be trying to work with my "inner knowledge" to see how i can resolve things (and try to really think the logic of it), and once i make it work i will start improving it watching tutorials so i can optimize my code. Europe and Asia pages fetch data from a local Json while Africa and America fetch data using Axios and a database created with MySql and deployed with Heroku."
 
-(https://user-images.githubusercontent.com/60524354/118298212-8fd34500-b4b5-11eb-971c-f9f585f5805c.png)
-)
+
+![Screen1](https://user-images.githubusercontent.com/60524354/118298383-c610c480-b4b5-11eb-929b-f09c2b9ca76f.png)
 ![Screen2](https://user-images.githubusercontent.com/60524354/118298224-93ff6280-b4b5-11eb-9d0e-adff62a2f39c.png)
 ![Screen 3](https://user-images.githubusercontent.com/60524354/118298227-95c92600-b4b5-11eb-981f-1f9218f648e4.png)
