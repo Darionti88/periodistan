@@ -26,6 +26,8 @@
 
 .landing-desc{
     font-size: 2rem;
+    color: #faf3e0;
+    text-shadow: 2px 2px 11px #1e212d;
 }
 
 .landing-image{
